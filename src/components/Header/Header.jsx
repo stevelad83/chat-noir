@@ -9,7 +9,7 @@ export default function Header() {
         <img className="googz" src="/images/cat.png" alt="Black cat" />
         <h1>Chat Noir Gold</h1>
       </div>
-      <h2>Jewelry with History and Heart</h2>
+      <h2 className="h2">Jewelry with History and Heart</h2>
       <ul className="utility-menu">
         <Link to="/rings" className="rings">
           Rings
