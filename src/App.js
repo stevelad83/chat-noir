@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/Header/Header.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home.jsx";
+import Details from "./components/Details/Details.jsx";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/home" element={<Home />} />
+          <Route path="/details" element={<Details />} />
         </Routes>
       </BrowserRouter>
       {/* <Router>
