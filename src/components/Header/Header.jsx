@@ -1,13 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Header.css";
 
 export default function Header() {
   return (
-    <header>
-      <img src="/images/cat.png" alt="Black cat" height="100" />
-      Chat Noir Gold
+    <header className="header">
+      <div className="title-container">
+        <img className="googz" src="/images/cat.png" alt="Black cat" />
+        <h1>Chat Noir Gold</h1>
+      </div>
       <h2>Jewelry with History and Heart</h2>
-      <ul>
+      <ul className="utility-menu">
         <Link to="/rings" className="rings">
           Rings
         </Link>
