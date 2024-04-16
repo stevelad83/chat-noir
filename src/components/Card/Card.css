@@ -1,0 +1,17 @@
+.card {
+  background-color: cornsilk;
+  max-width: 200px;
+  width: calc(33.33% - 20px); /* Set width for each card, considering margins */
+  margin: 10px; /* Add margin for spacing between cards */
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card img {
+  border: 1px solid black;
+}
