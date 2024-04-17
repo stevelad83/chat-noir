@@ -2,13 +2,16 @@ import React from "react";
 import "./Card.css";
 import { Link } from "react-router-dom";
 
-export default function Card({ title, imageUrl, description, id }) {
+export default function Card({ title, imageUrl, description, id, price }) {
   return (
     <div className="card">
-      <Link to={`/details/${id}`}>
-        <h2>{title}</h2>
+      <Link
+        to={`/details/${id}`}
+        style={{ textDecoration: "none", color: "inherit" }}
+      >
         <img src={imageUrl} alt="placeholder kitten" />
-        <p>This is a sample card</p>
+        <h3 className="description">{description}</h3>
+        <p>{price}</p>
       </Link>
     </div>
   );

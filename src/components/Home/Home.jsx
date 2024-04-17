@@ -1,50 +1,56 @@
 import React from "react";
 import Card from "../Card/Card.jsx";
 import "./Home.css";
-import { Link } from "react-router-dom";
 
 const cards = [
   {
     id: 1,
     title: "Card 1",
     imageUrl: "http://placekitten.com/100/100",
-    description: "This is a sample card",
+    description: "Sapphire and diamond ring",
+    price: "$100",
   },
   {
     id: 2,
     title: "Card 2",
     imageUrl: "http://placekitten.com/100/100",
-    description: "This is another sample card",
+    description: "Antique silver bangle",
+    price: "$100",
   },
   {
     id: 3,
     title: "Card 3",
     imageUrl: "http://placekitten.com/100/100",
-    description: "This is another sample card",
+    description: "Emerald engagement ring",
+    price: "$100",
   },
   {
     id: 4,
     title: "Card 4",
     imageUrl: "http://placekitten.com/100/100",
-    description: "This is another sample card",
+    description: "18K watch fob",
+    price: "$100",
   },
   {
     id: 5,
     title: "Card 5",
     imageUrl: "http://placekitten.com/100/100",
-    description: "This is another sample card",
+    description: "M initial signet ring",
+    price: "$100",
   },
   {
     id: 6,
     title: "Card 6",
     imageUrl: "http://placekitten.com/100/100",
-    description: "This is another sample card",
+    description: "Frog brooch with ruby eyes",
+    price: "$100",
   },
   {
     id: 7,
     title: "Card 7",
     imageUrl: "http://placekitten.com/100/100",
-    description: "This is another sample card",
+    description: "22K sold gold antique wedding band",
+    price: "$100",
   },
   // Add more card data as needed
 ];
@@ -52,13 +58,14 @@ const cards = [
 export default function Home() {
   return (
     <div className="home">
-      {cards.map((card) => (
+      {cards.map(({ id, title, imageUrl, description, price }) => (
         <Card
-          key={card.id}
-          id={card.id}
-          title={card.title}
-          imageUrl={card.imageUrl}
-          description={card.description}
+          key={id}
+          id={id}
+          title={title}
+          imageUrl={imageUrl}
+          description={description}
+          price={price}
         />
       ))}
     </div>
