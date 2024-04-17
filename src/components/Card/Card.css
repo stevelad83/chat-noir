@@ -1,10 +1,10 @@
 .card {
+  position: relative;
   max-width: 200px;
-  width: calc(33.33% - 20px); /* Set width for each card, considering margins */
-  margin: 0px;
+  width: calc(33.33% - 20px);
+  margin: 0;
   padding: 9px;
   box-sizing: border-box;
-  /* border: 1px solid black; */
   transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0);
 }
@@ -12,12 +12,37 @@
 .card:hover {
   border-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
 .card img {
-  border: 1px solid black;
+  width: 100%;
+  height: auto;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .card-link:visited {
-  color: inherit; /* Set the color to inherit to prevent color change */
+  color: inherit;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.text-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description,
+.price {
+  margin: 0;
 }
