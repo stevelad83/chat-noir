@@ -11,16 +11,10 @@ function App() {
         <Header />
         <Routes>
           {/* <Route path="/home" element={<Home />} /> */}
-          <Route path="/" element={<Home />} />
-          <Route path="/details" element={<Details />} />
+          <Route path="*" element={<Home />} />
+          <Route path="/details/:id" element={<Details />} />
         </Routes>
       </BrowserRouter>
-      {/* <Router>
-        <Header />
-        <Routes>
-          <Route path="/rings"></Route>
-        </Routes>
-      </Router> */}
     </div>
   );
 }
