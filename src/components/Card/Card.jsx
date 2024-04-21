@@ -5,7 +5,10 @@ import "./Card.css";
 export default function Card({ imageUrl, description, id, price, details }) {
   return (
     <div className="card">
-      <Link to={`/details/${id}`} className="card-link">
+      <Link
+        to={{ pathname: `/details/${id}`, state: { details } }}
+        className="card-link"
+      >
         <div className="content">
           <img src={imageUrl} alt="placeholder kitten" />
           <div className="text-content">
