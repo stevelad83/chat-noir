@@ -22,10 +22,12 @@ export default function Details(props) {
           ))}
         </ul>
       </div>
-      <div className="main_img">
-        <img src={mainImageUrl} alt="main kitten" />
+      <div className="image_and_details">
+        <div className="main_img">
+          <img src={mainImageUrl} alt="main kitten" />
+        </div>
+        <p>{card.details}</p>
       </div>
-      <p>{card.details}</p>
     </div>
   );
 }
