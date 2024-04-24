@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import { RiShoppingCartLine } from "react-icons/ri";
 
 export default function Header() {
   return (
@@ -9,7 +10,7 @@ export default function Header() {
         <img className="googz" src="/images/cat.png" alt="Black cat" />
         <h1>Chat Noir Gold</h1>
       </div>
-      <h2 className="h2">Jewelry with History and Heart</h2>
+      <h2 className="h2">Jewelry with History and Heart</h2>{" "}
       <ul className="utility-menu">
         <Link to="/rings" className="rings">
           Rings
@@ -19,6 +20,9 @@ export default function Header() {
         <Link>Pendants</Link>
         <Link>Earrings</Link>
       </ul>
+      <div className="cart-link">
+        <RiShoppingCartLine />
+      </div>
     </header>
   );
 }

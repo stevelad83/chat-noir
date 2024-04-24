@@ -27,6 +27,7 @@ export default function Details(props) {
           <img src={mainImageUrl} alt="main kitten" />
         </div>
         <p className="text">{card.details}</p>
+        <button className="add_to_cart">Add to cart</button>
       </div>
     </div>
   );
