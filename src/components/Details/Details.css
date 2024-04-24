@@ -22,7 +22,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: 20px;
-  margin-right: 20px;
+  margin-right: 0px;
 }
 
 .image_list {
@@ -30,6 +30,7 @@
   padding: 0;
   margin: 0;
   padding-left: 10px;
+  margin-left: 40px;
 }
 
 .image_list li {
@@ -47,6 +48,7 @@
   align-items: center;
   justify-content: flex-start;
   padding-top: 20px;
+  margin-right: 150px;
 }
 
 .text {
