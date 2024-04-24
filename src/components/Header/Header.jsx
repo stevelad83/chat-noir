@@ -21,7 +21,9 @@ export default function Header() {
         <Link>Earrings</Link>
       </ul>
       <div className="cart-link">
-        <RiShoppingCartLine />
+        <Link>
+          <RiShoppingCartLine />
+        </Link>
       </div>
     </header>
   );

@@ -49,6 +49,19 @@
   text-decoration: none;
 }
 
+.cart-link a {
+  color: black;
+  text-decoration: none;
+}
+
+.cart-link a:hover .cart-icon {
+  color: aqua;
+}
+
+.cart-icon {
+  font-size: 24px;
+}
+
 .cart-link a:hover {
   color: aqua;
 }
