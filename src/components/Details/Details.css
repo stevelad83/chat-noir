@@ -4,15 +4,16 @@
 }
 
 .main_img {
-  flex: 1;
+  display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .main_img img {
-  width: 50%;
+  width: 500px;
   height: auto;
-  padding-top: 20px;
+
+  padding-bottom: 20px;
 }
 
 .details_images {
@@ -43,4 +44,11 @@
 .image_and_details {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+
+.text {
+  width: 80%;
 }

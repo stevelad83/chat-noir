@@ -26,7 +26,7 @@ export default function Details(props) {
         <div className="main_img">
           <img src={mainImageUrl} alt="main kitten" />
         </div>
-        <p>{card.details}</p>
+        <p className="text">{card.details}</p>
       </div>
     </div>
   );
