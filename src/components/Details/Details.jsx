@@ -1,9 +1,8 @@
 import React from "react";
-import { cards } from "../../assets/data.jsx";
 import { useParams } from "react-router-dom";
 import "./Details.css";
 
-export default function Details(props) {
+export default function Details({ cards, addToCart }) {
   const { id } = useParams();
   const card = cards.find((card) => card.id === parseInt(id));
   const mainImageUrl =
@@ -27,7 +26,9 @@ export default function Details(props) {
           <img src={mainImageUrl} alt="main kitten" />
         </div>
         <p className="text">{card.details}</p>
-        <button className="add_to_cart">Add to cart</button>
+        <button className="add_to_cart" onClick={() => addToCart(card)}>
+          Add to cart
+        </button>
       </div>
     </div>
   );
