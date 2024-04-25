@@ -12,13 +12,14 @@ export default function Header() {
       </div>
       <h2 className="h2">Jewelry with History and Heart</h2>{" "}
       <ul className="utility-menu">
+        <Link to="/all">All</Link>
         <Link to="/rings" className="rings">
           Rings
         </Link>
-        <Link>Bracelets</Link>
-        <Link>Necklaces</Link>
-        <Link>Pendants</Link>
-        <Link>Earrings</Link>
+        <Link to="/bracelets">Bracelets</Link>
+        <Link to="/necklaces">Necklaces</Link>
+        <Link to="/pendants">Pendants</Link>
+        <Link to="/earrings">Earrings</Link>
       </ul>
       <div className="cart-link">
         <Link to="/cart">

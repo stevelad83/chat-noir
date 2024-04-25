@@ -5,6 +5,11 @@ import Home from "./components/Home/Home.jsx";
 import Details from "./components/Details/Details.jsx";
 import Cart from "./components/Cart/Cart.jsx";
 import { cards } from "./assets/data.jsx";
+import Rings from "./components/Rings/Rings.jsx";
+import Bracelets from "./components/Bracelets/Bracelets.jsx";
+import Necklaces from "./components/Necklaces/Necklaces.jsx";
+import Pendants from "./components/Pendants/Pendants.jsx";
+import Earrings from "./components/Earrings/Earrings.jsx";
 
 export default function App() {
   const [cart, setCart] = useState([]);
@@ -26,6 +31,12 @@ export default function App() {
           />
           <Route path="/cart" element={<Cart cart={cart} />} />{" "}
           {/* Pass cart state to Cart component */}
+          <Route path="/all" element={<Home />} />
+          <Route path="/rings" element={<Rings />} />
+          <Route path="/bracelets" element={<Bracelets />} />
+          <Route path="/necklaces" element={<Necklaces />} />
+          <Route path="/pendants" element={<Pendants />} />
+          <Route path="/earrings" element={<Earrings />} />
         </Routes>
       </BrowserRouter>
     </div>
