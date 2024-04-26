@@ -5,6 +5,7 @@
   align-items: center;
   text-align: center;
   position: relative;
+  background-color: #fafafa;
 }
 
 .header .title-container {
@@ -28,6 +29,7 @@
 
 .utility-menu a {
   padding: 2px;
+  text-decoration: none;
 }
 
 .utility-menu a:hover {
@@ -38,10 +40,23 @@
   margin: 0;
 }
 
-.cart-link {
+.icons-bar {
   position: absolute;
   top: 20px;
   right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.icons-bar svg {
+  font-size: 20px;
+  margin-right: 5px;
+  margin-left: 10px;
+  vertical-align: super;
+}
+
+.icons-bar .cart-link {
+  margin-top: 10px;
 }
 
 .cart-link a {

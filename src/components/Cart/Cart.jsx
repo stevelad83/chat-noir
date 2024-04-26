@@ -1,4 +1,5 @@
 import React from "react";
+import "./Cart.css";
 
 export default function Cart({ cart }) {
   return (
@@ -9,12 +10,15 @@ export default function Cart({ cart }) {
           <div key={item.id} className="cart-item">
             <img src={item.imageUrl} alt={item.title} />
             <div>
-              <h3>{item.title}</h3>
               <p>{item.description}</p>
               <p>Price: {item.price}</p>
+              <button className="delete-button">Delete</button>
             </div>
           </div>
         ))}
+      </div>
+      <div className="buttons">
+        <button>Checkout</button>
       </div>
     </div>
   );
