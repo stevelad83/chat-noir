@@ -1,5 +1,5 @@
-import React from "react";
+// import React from "react";
 
-export default function All() {
-  return <div>All items</div>;
-}
+// export default function All() {
+//   return <div>All items</div>;
+// }

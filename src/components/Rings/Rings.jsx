@@ -3,7 +3,6 @@ import { getRings } from "../../utils/dataUtils.js";
 import Card from "../Card/Card.jsx";
 
 const rings = getRings();
-console.log(rings);
 
 export default function Rings() {
   return (
