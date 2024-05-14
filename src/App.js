@@ -15,8 +15,20 @@ export default function App() {
   const [cart, setCart] = useState([]);
 
   const addToCart = (item) => {
-    setCart([...cart, item]);
-    alert("Item added to cart!");
+    const existsInCart = cart.some((cartItem) => cartItem.id === item.id);
+
+    if (!existsInCart) {
+      setCart([...cart, item]);
+      alert("Item added to cart!");
+    } else {
+      alert("Item already added!");
+    }
+  };
+
+  const removeFromCart = (id) => {
+    console.log("removing item with ID:", id);
+    setCart(cart.filter((item) => item.id !== id));
+    console.log("cart after removal", cart);
   };
 
   return (
@@ -24,12 +36,15 @@ export default function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/*" element={<Home />} />
           <Route
             path="/details/:id"
             element={<Details cards={cards} addToCart={addToCart} />}
           />
-          <Route path="/cart" element={<Cart cart={cart} />} />{" "}
+          <Route
+            path="/cart"
+            element={<Cart cart={cart} removeFromCart={removeFromCart} />}
+          />{" "}
           {/* Pass cart state to Cart component */}
           <Route path="/all" element={<Home />} />
           <Route path="/rings" element={<Rings />} />

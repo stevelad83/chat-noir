@@ -7,7 +7,6 @@ const pendants = getPendants();
 export default function Pendants() {
   return (
     <div>
-      <h2>Pendants</h2>
       <div className="card-container">
         {pendants.map((pendant) => (
           <Card

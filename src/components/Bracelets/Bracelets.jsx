@@ -7,7 +7,6 @@ const bracelets = getBracelets();
 export default function Bracelets() {
   return (
     <div>
-      <h2>Bracelets</h2>
       <div className="card-container">
         {bracelets.map((bracelet) => (
           <Card

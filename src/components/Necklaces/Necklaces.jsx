@@ -7,7 +7,6 @@ const necklaces = getNecklaces();
 export default function Necklaces() {
   return (
     <div>
-      <h2>Necklaces</h2>
       <div className="card-container">
         {necklaces.map((necklace) => (
           <Card

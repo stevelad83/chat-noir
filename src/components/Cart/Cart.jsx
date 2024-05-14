@@ -1,10 +1,12 @@
 import React from "react";
 import "./Cart.css";
 
-export default function Cart({ cart }) {
+export default function Cart({ cart, removeFromCart }) {
+  const handleDelete = (id) => {
+    removeFromCart(id);
+  };
   return (
     <div className="cart-page">
-      <h2>Cart</h2>
       <div className="cart-items">
         {cart.map((item) => (
           <div key={item.id} className="cart-item">
@@ -12,7 +14,12 @@ export default function Cart({ cart }) {
             <div>
               <p>{item.description}</p>
               <p>Price: {item.price}</p>
-              <button className="delete-button">Delete</button>
+              <button
+                className="delete-button"
+                onClick={() => handleDelete(item.id)}
+              >
+                Delete
+              </button>
             </div>
           </div>
         ))}

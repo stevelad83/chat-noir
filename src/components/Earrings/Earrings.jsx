@@ -7,7 +7,6 @@ const earrings = getEarrings();
 export default function Earrings() {
   return (
     <div>
-      <h2>Earrings</h2>
       <div className="card-container">
         {earrings.map((earring) => (
           <Card

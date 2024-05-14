@@ -1,13 +1,13 @@
 import React from "react";
 import { getRings } from "../../utils/dataUtils.js";
 import Card from "../Card/Card.jsx";
+import "./Rings.css";
 
 const rings = getRings();
 
 export default function Rings() {
   return (
     <div>
-      <h2>Rings</h2>
       <div className="card-container">
         {rings.map((ring) => (
           <Card
