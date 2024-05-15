@@ -26,9 +26,7 @@ export default function App() {
   };
 
   const removeFromCart = (id) => {
-    console.log("removing item with ID:", id);
     setCart(cart.filter((item) => item.id !== id));
-    console.log("cart after removal", cart);
   };
 
   return (

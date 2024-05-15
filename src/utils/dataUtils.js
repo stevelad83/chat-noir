@@ -5,7 +5,7 @@ export function filterItemsByType(type) {
 }
 
 export function getRings() {
-  return filterItemsByType("ring");
+  return filterItemsByType(" ring");
 }
 
 export function getBracelets() {
