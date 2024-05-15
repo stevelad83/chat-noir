@@ -43,7 +43,6 @@ export default function App() {
             path="/cart"
             element={<Cart cart={cart} removeFromCart={removeFromCart} />}
           />{" "}
-          {/* Pass cart state to Cart component */}
           <Route path="/all" element={<Home />} />
           <Route path="/rings" element={<Rings />} />
           <Route path="/bracelets" element={<Bracelets />} />
