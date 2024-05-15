@@ -67,7 +67,7 @@ export const cards = [
     id: 8,
     title: "Card 8",
     imageUrl: "http://placekitten.com/200/200",
-    description: "Diamond and sapphire Art Deco platinum necklace",
+    description: "Diamond and sapphire Art Deco necklace",
     price: "$1000",
     details:
       "This Diamond and sapphire Art Deco platinum necklace features a central round blue sapphire in a star setting with small diamond diamonds surrounding. The ring setting is done in platinum and the band is in 18K yellow gold. There is a stamp to the inside of the band 18K. This ring could be stacked with other rings, but looks great on its own. Resizable. Total weight 2.9g. Size 5 1/4.",

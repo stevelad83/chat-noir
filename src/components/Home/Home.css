@@ -1,7 +1,13 @@
 .home {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 10px;
+  padding-left: 5%;
+  justify-content: center;
+  width: 100%;
   font-family: "Cormorant", serif;
+}
+
+.home .card {
+  width: 100%;
 }
